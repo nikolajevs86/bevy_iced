@@ -99,7 +99,7 @@ impl IcedProps {
             .get_resource::<RenderDevice>()
             .unwrap()
             .wgpu_device();
-        let format = wgpu::TextureFormat::Bgra8UnormSrgb;
+        let format = wgpu::TextureFormat::Rgba8UnormSrgb;
 
         Self {
             renderer: iced_wgpu::Renderer::new(iced_wgpu::Backend::new(
